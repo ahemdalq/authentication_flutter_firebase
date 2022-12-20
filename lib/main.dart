@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebaseauth/screens/auth/home_screen.dart';
 import 'package:firebaseauth/screens/auth/signInScreen.dart';
 import 'package:firebaseauth/screens/auth/singUpscreen.dart';
+import 'package:firebaseauth/screens/userScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:get_storage/get_storage.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
     var userId = GetStorage().read('iduser');
 
     return GetMaterialApp(
-      home: userId == null ? SignInScreen() : HomeScreen(),
+      home: userId == null ? SignUpScreen() : userScreen(),
     );
   }
 }

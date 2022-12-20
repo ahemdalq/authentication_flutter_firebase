@@ -1,4 +1,4 @@
-import 'package:firebaseauth/screens/auth/controller/auth_controller.dart';
+import 'package:firebaseauth/controller/auth_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
 
